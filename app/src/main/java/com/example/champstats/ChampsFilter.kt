@@ -7,10 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class ChampsPicker : Fragment() {
+class ChampsFilter : Fragment() {
 
     companion object {
-        fun newInstance() = ChampsPicker()
+        fun newInstance() = ChampsFilter()
     }
 
     private lateinit var viewModel: ChampsViewModel
@@ -19,7 +19,7 @@ class ChampsPicker : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_champs_picker, container, false)
+        return inflater.inflate(R.layout.fragment_champs_filter, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
