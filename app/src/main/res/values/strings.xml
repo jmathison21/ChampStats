@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">ChampStats</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="champ_icon_alt">Champion Icon</string>
+    <string name="champ_name_placeholder">Champion</string>
+
 </resources>

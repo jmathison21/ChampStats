@@ -19,7 +19,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_champs_filter"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/displayFragmentView"
@@ -34,5 +35,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/filterFragmentView" />
+        app:layout_constraintTop_toBottomOf="@+id/filterFragmentView"
+        tools:layout="@layout/fragment_champs_display"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
