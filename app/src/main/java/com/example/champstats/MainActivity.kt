@@ -13,9 +13,7 @@ class MainActivity : AppCompatActivity(), ChampsFilter.FilterListener {
         val displayFragment = supportFragmentManager.findFragmentById(R.id.displayFragmentView) as ChampsDisplay
 
         viewModel.champions.observe(this) {champList ->
-            if(champList.isNotEmpty()) {
-                displayFragment.setChampions(champList)
-            }
+            displayFragment.setChampions(champList)
         }
     }
 

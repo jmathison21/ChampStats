@@ -45,13 +45,12 @@ class ChampsViewModel(application: Application) : AndroidViewModel(application) 
     }
 
     private fun filterChampions() {
-        val champList = _champions.value
-        if(champList.isNullOrEmpty()) return
+        if(allChampsList.isEmpty()) return
 
         if(query == "") {
-            _champions.value = allChampsList.toList()
+            _champions.value = allChampsList.map { it }
         } else {
-            _champions.postValue(allChampsList.filter { champion: Champion -> champion.name.contains(query, true) })
+            _champions.value = allChampsList.filter { champion: Champion -> champion.name.contains(query, true) }
         }
 
         sortChampions()
