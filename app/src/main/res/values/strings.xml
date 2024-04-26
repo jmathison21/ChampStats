@@ -1,7 +1,20 @@
 <resources>
     <string name="app_name">ChampStats</string>
 
+    <string name="sort_label">Sort: </string>
+    <string name="search_hint">Search Champions</string>
+
     <string name="champ_icon_alt">Champion Icon</string>
     <string name="champ_name_placeholder">Champion</string>
+    <string name="champ_title_placeholder">Title</string>
+    <string name="champ_blurb_placeholder">Blurb</string>
+
+    <string name="champ_info_template">%d/10</string>
+    <string name="champ_stat_template">%d</string>
+
+    <string-array name="sort_options">
+        <item>Name: A-Z</item>
+        <item>Name: Z-A</item>
+    </string-array>
 
 </resources>
